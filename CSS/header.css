@@ -1,0 +1,134 @@
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(158, 156, 156);
+    z-index: 10;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    height: 24px;
+    margin: 0 20px;
+}
+.youtube-logo{
+    height: 20px;
+}
+
+.middle-section{
+    flex: 1;
+    max-width: 600px;
+    margin: 0 60px 0 40px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    height: 36px;
+    flex: 1;
+    width: 0;
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 16px;
+    box-shadow: inset 1px 2px 5px rgb(0, 0, 0, 0.05);
+}
+.search-bar::placeholder{
+    font-size: 16px;
+}
+.search-button{
+    height: 40px;
+    width: 60px;
+    border: 1px solid grey;
+    margin-left: -2px;
+    margin-right: 10px;
+    padding-top: 4px;
+    background-color: rgb(227, 225, 225);
+}
+.search-icon{
+    height: 25px;
+}
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.notification-icon-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.notification-icon-container .tooltip{
+    position: absolute;
+    background-color: rgb(104, 103, 103);
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.upload-icon-container .tooltip,
+.notification-icon-container .tooltip{
+    margin-top: 8px;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+    opacity: 1;
+}
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(227, 225, 225);
+}
+.voice-search-icon{
+    height: 25px;
+}
+
+.right-section{
+    display: flex;
+    width: 170px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload-icon{
+    height: 26px;
+}
+
+.notification-icon{
+    height: 26px;
+}
+.notifications{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(147, 11, 11);
+    color: white;
+    font-size: 12px;
+    padding: 0 4px;
+    border-radius: 8px;
+
+}
+.my-profile-pic{
+    height: 32px;
+    border-radius: 16px;
+}
